@@ -1,0 +1,45 @@
+$blueColor: #1da1f2;
+$borderColor: #454b50;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  border-bottom: 1px solid $borderColor;
+  .leftColumn {
+    margin-right: 12px;
+    .profilePhoto {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  .rightColumn {
+    flex-grow: 1;
+    input {
+      color: white;
+      background-color: black;
+      outline: none;
+      border: none;
+      width: 100%;
+      font-size: 20px;
+      margin: 16px 0;
+    }
+    .submitButton {
+      text-align: right;
+      width: 100%;
+    }
+    button {
+      padding: 0 16px;
+      line-height: 38px;
+      color: white;
+      background-color: $blueColor;
+      border: none;
+      outline: none;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 19px;
+    }
+  }
+}
